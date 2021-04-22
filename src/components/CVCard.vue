@@ -6,7 +6,9 @@
         </h2>
         <p>If you would like to learn more about my professional activities in more detail, you can download my resume below.</p>
         <div class="download">
-            <a href="/CV_Kravcov_Sergey.docx" aria-label="Download resume">
+            <a href="https://drive.google.com/file/d/1RmoSQTOi7VL2UdZWzMAIjgSI7-S1pPZ4/view"
+               target="_blank"
+               aria-label="Download resume">
                 <i class="fas fa-download" title="Download resume" aria-hidden="true" role="presentation"></i>
             </a>
         </div>

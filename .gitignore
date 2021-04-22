@@ -29,5 +29,3 @@ src/**/*.map
 src/**/*.js
 tests/**/*.map
 tests/**/*.js
-
-packet-lock.json
