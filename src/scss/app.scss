@@ -1,26 +1,70 @@
-#app {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+@font-face {
+    font-family: 'Nunito Light';
+    src: url('~@/scss/Nunito-Light.ttf');
+}
+
+@font-face {
+    font-family: 'ubuntubold';
+    src: url('~@/scss/ubuntubold.ttf');
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url('~@/scss/ubuntu.ttf');
+}
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url('~@/scss/ubuntulight.ttf');
 }
 
 body {
     min-height: 100vh;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Nunito Light';
+    background-color: #dfe0e0;
 }
 
-* {    
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+    color: inherit;
 
     &:hover {
         text-decoration: underline;
+    }
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+@media print {
+
+    .left-panel li img,
+    .left-panel li i,
+    button,
+    .base-content-section a,
+    h1 br {
+        display: none;
+    }
+
+    .left-panel {
+        page-break-after: always;
+    }
+
+    @page {
+        size: A4;
+        margin: 0;
     }
 }
